@@ -1,5 +1,5 @@
 #!/bin/bash
 
-for x in ./*.txt; do
+for x in ./*; do
   mkdir "${x%.*}" && mv "$x" "${x%.*}"
 done
